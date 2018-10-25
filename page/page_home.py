@@ -9,6 +9,7 @@ class HomePageAction(BaseAction):
 
     into_btn_feature = By.ID,"com.tpshop.malls:id/start_Button"
     home_btn_feature = By.XPATH,( "text,首页,1","resource-id,com.tpshop.malls:id/tab_txtv,1" )
+    myself_btn_feature = By.XPATH,( "text,我的,1","resource-id,com.tpshop.malls:id/tab_txtv,1" )
 
 
     def auto_enter_home(self):
@@ -25,3 +26,6 @@ class HomePageAction(BaseAction):
                 time.sleep(0.6)
 
             self.click(self.into_btn_feature)
+
+    def click_myself(self):
+        self.click(self.myself_btn_feature)

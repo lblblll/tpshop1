@@ -1,6 +1,8 @@
 from base import initDriver
 from page.page import Page
+import pytest
 
+pytestmark = pytest.mark.skip("跳过")
 
 class TestDemo:
 

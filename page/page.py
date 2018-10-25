@@ -1,4 +1,6 @@
 from page.page_home import HomePageAction
+from page.page_myself import MyselfPageAction
+
 
 class Page:
 
@@ -8,3 +10,7 @@ class Page:
     @property
     def inithomepage(self):
         return HomePageAction(self.driver)
+
+    @property
+    def initmyselfpage(self):
+        return MyselfPageAction(self.driver)
